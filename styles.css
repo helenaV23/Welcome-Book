@@ -1,0 +1,115 @@
+@font-face {
+    font-family: 'Bw-Gradual-bold';
+    src: url(fonts/BwGradual-Bold.woff);
+}
+
+@font-face {
+    font-family: 'Cera-regular';
+    src: url(fonts/Cera-Regular.ttf);
+}
+
+
+body {
+    margin: 0px;
+}
+
+header {
+    padding: 25px 0px 25px;
+}
+
+.container {
+    max-width: 1440px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;;
+}
+
+.burger-menu {
+    margin-top: 7px;
+}
+
+.burger-menu,
+.burger-menu::after,
+.burger-menu::before {
+    height: 2px;
+    width: 39px;
+    background-color: black;
+    display: inline-block;
+    position: relative;      
+}
+
+.burger-menu::after {
+    content: '';
+    width: 33px;
+    position: absolute; 
+    top: 8px;
+}
+
+.burger-menu::before {
+    content: '';
+    position: absolute; 
+    top: 16px;
+}
+
+
+.rectangle {
+    width: 100%;
+    background-color: #001FA8;
+    padding: 0px;
+    height: 561px;
+    display: inline-block;
+    position: relative;
+}
+
+
+.rectangle::after {
+    content: '';
+    position: absolute;
+    top: 100%; 
+    background: linear-gradient(to right bottom, #001FA8 50%, transparent calc(50% + 1px));
+    width: 100%;
+    height: 75px;
+} 
+
+h1 {
+    position: absolute;
+    width: 650px;
+    margin-top: 154px;
+    margin-bottom: 0px;
+    font-family: 'BW-Gradual-bold';
+    font-size: 56px;
+    color: white;
+}
+
+.p-1{
+    width: 538px;
+    margin-top: 316px;
+    margin-bottom: 50px;
+    font-family: 'Cera-regular';
+    font-size: 20px;
+    line-height: 30px;
+    color: white;
+}
+
+.content {
+    position: relative;
+}
+
+.btn-hello {
+    margin: 0px;
+    border: 0px;
+    border-radius: 0px;
+    padding: 18px 36px 18px 36px;
+    background-color: black;
+    font-family: 'BW-Gradual-bold';
+    font-size: 16px;
+    line-height: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.main-screen-img {
+    margin-top: 112px;
+}
+
+
