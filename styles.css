@@ -1,34 +1,158 @@
 @font-face {
     font-family: 'Bw-Gradual-bold';
-    src: url(fonts/BwGradual-Bold.woff);
+    src: url('fonts/BwGradual-Bold.woff');
+}
+
+@font-face {
+    font-family: 'BW-Gradual-regular';
+    src: url('fonts/BwGradual-Regular.woff');
 }
 
 @font-face {
     font-family: 'Cera-regular';
-    src: url(fonts/Cera-Regular.ttf);
+    src: url('fonts/Cera-Regular.ttf');
 }
 
 
 body {
     margin: 0px;
+    font-family: 'Cera-regular';
+    font-size: 16px;
 }
 
 header {
-    padding: 25px 0px 25px;
+    padding: 25px 0px;
 }
 
 .container {
     max-width: 1440px;
     margin: auto;
+}
+
+.wraper {
     display: flex;
-    justify-content: space-between;;
+    justify-content: space-between;
+}
+                           
+.main-screen {
+    width: 100%;
+    background-color: #001FA8;
+    position: relative;
+    padding: 112px 0px 38px;
 }
 
-.burger-menu {
+section::after {
+    content: '';
+    position: absolute;
+    top: 100%; 
+    background: linear-gradient(to right bottom, #001FA8 50%, transparent calc(50% + 1px));
+    width: 100%;
+    height: 75px;
+} 
+
+h1 {
+    width: 650px;
+    margin: 0px;
+    font-family: 'BW-Gradual-bold';
+    font-size: 56px;
+    color: white;
+}
+
+.description {
+    width: 538px;
+    margin-top: 32px;
+    margin-bottom: 50px;
+    font-size: 20px;
+    line-height: 30px;
+    color: white;
+}
+
+.content {
+    padding: 42px 0px 40px;
+}
+
+.btn {
+    margin: 0px;
+    border: 0px;
+    border-radius: 0px;
+    padding: 18px 36px 18px 36px;
+    background-color: black;
+    font-family: 'BW-Gradual-bold'; 
+    font-size: 16px;
+    line-height: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.main-screen-img {
+    height: 411px;
+    width: 538px;
+}
+
+.navbar {
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar a:hover {
+    text-decoration: underline #FF8500;
+    text-underline-offset: 6px; 
+}
+
+.navbar li {
+    display: inline;
+    margin-right: 60px;
+    font-family: 'BW-Gradual-regular';
+    font-weight: 16px;
+    width: 20%;
+}
+
+.navbar li:last-child {
+    margin-right: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .burger-menu {
     margin-top: 7px;
-}
+} */
 
-.burger-menu,
+/* .burger-menu,
 .burger-menu::after,
 .burger-menu::before {
     height: 2px;
@@ -49,67 +173,73 @@ header {
     content: '';
     position: absolute; 
     top: 16px;
+} */ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .burger-menu-btn {
+    position: absolute;
+    width: 39px;
+    height: 18px;
+    background-color: blue; 
+
 }
 
-
-.rectangle {
-    width: 100%;
-    background-color: #001FA8;
-    padding: 0px;
-    height: 561px;
+ .burger-menu-lines {
+    position: absolute;
+    width: 39px;
+    height: 2px;
+    background-color: black;
     display: inline-block;
-    position: relative;
+
+ 
 }
 
-
-.rectangle::after {
+.burger-menu-lines::before {
     content: '';
     position: absolute;
-    top: 100%; 
-    background: linear-gradient(to right bottom, #001FA8 50%, transparent calc(50% + 1px));
-    width: 100%;
-    height: 75px;
-} 
-
-h1 {
-    position: absolute;
-    width: 650px;
-    margin-top: 154px;
-    margin-bottom: 0px;
-    font-family: 'BW-Gradual-bold';
-    font-size: 56px;
-    color: white;
-}
-
-.p-1{
-    width: 538px;
-    margin-top: 316px;
-    margin-bottom: 50px;
-    font-family: 'Cera-regular';
-    font-size: 20px;
-    line-height: 30px;
-    color: white;
-}
-
-.content {
-    position: relative;
-}
-
-.btn-hello {
-    margin: 0px;
-    border: 0px;
-    border-radius: 0px;
-    padding: 18px 36px 18px 36px;
+    top: 8px;
+    width: 33px;
+    height: 2px;
     background-color: black;
-    font-family: 'BW-Gradual-bold';
-    font-size: 16px;
-    line-height: 20px;
-    color: white;
-    cursor: pointer;
+    display: inline-block;
 }
 
-.main-screen-img {
-    margin-top: 112px;
-}
+.burger-menu-lines::after {
+    content: '';
+    position: absolute;
+    top: 16px;
+    width: 39px;
+    height: 2px;
+    background-color: black;
+    display: inline-block;
 
-
+} */
