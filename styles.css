@@ -13,6 +13,11 @@
     src: url('fonts/Cera-Regular.ttf');
 }
 
+@font-face {
+    font-family:'Cera-medium';
+    src: url('fonts/Cera-Medium.woff');
+}
+
 
 body {
     margin: 0px;
@@ -28,8 +33,8 @@ header {
     max-width: 1440px;
     margin: auto;
 }
-
-.wraper {
+ 
+.flexwraper {     /*змінити назву */
     display: flex;
     justify-content: space-between;
 }
@@ -38,16 +43,17 @@ header {
     width: 100%;
     background-color: #001FA8;
     position: relative;
-    padding: 112px 0px 38px;
+    padding: 112px 0px 38px; 
 }
 
-section::after {
+.main-screen::after{
     content: '';
     position: absolute;
     top: 100%; 
     background: linear-gradient(to right bottom, #001FA8 50%, transparent calc(50% + 1px));
     width: 100%;
     height: 75px;
+
 } 
 
 h1 {
@@ -89,6 +95,8 @@ h1 {
     width: 538px;
 }
 
+
+
 .navbar {
     margin: 0px;
     padding: 0px;
@@ -108,138 +116,51 @@ h1 {
     display: inline;
     margin-right: 60px;
     font-family: 'BW-Gradual-regular';
-    font-weight: 16px;
-    width: 20%;
 }
 
 .navbar li:last-child {
     margin-right: 0px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .burger-menu {
-    margin-top: 7px;
-} */
-
-/* .burger-menu,
-.burger-menu::after,
-.burger-menu::before {
-    height: 2px;
-    width: 39px;
-    background-color: black;
-    display: inline-block;
-    position: relative;      
+.welcome-message {
+    width: 100%;
+    background-color: #EFF4FF;
+    padding: 198px 0px 82px;
+    text-align: center;
+    margin: auto;
 }
 
-.burger-menu::after {
-    content: '';
-    width: 33px;
-    position: absolute; 
-    top: 8px;
-}
-
-.burger-menu::before {
-    content: '';
-    position: absolute; 
-    top: 16px;
-} */ 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .burger-menu-btn {
-    position: absolute;
-    width: 39px;
-    height: 18px;
-    background-color: blue; 
-
-}
-
- .burger-menu-lines {
-    position: absolute;
-    width: 39px;
-    height: 2px;
-    background-color: black;
-    display: inline-block;
-
- 
-}
-
-.burger-menu-lines::before {
-    content: '';
-    position: absolute;
-    top: 8px;
-    width: 33px;
-    height: 2px;
-    background-color: black;
+.welcome-message-text {
+    width: 800px;
+    font-size: 20px;
+    line-height: 30px;
     display: inline-block;
 }
 
-.burger-menu-lines::after {
-    content: '';
-    position: absolute;
-    top: 16px;
-    width: 39px;
-    height: 2px;
-    background-color: black;
-    display: inline-block;
+.highlighted-word {
+    font-size: 32px;
+    font-family:'Cera-medium';
+}
 
-} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
