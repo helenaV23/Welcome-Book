@@ -39,34 +39,34 @@ header {
     max-width: 1440px;
     margin: auto;
 }
- 
-.push-apart { 
+
+.push-apart {
     display: flex;
     justify-content: space-between;
 }
-                           
+
 .main-screen {
     width: 100%;
     background-color: #001FA8;
     position: relative;
-    padding: 112px 0px 38px; 
+    padding: 112px 0px 38px;
     color: white;
 }
 
 .main-screen::after {
     content: '';
     position: absolute;
-    top: 100%; 
+    top: 100%;
     background: linear-gradient(to right bottom, #001FA8 50%, transparent calc(50% + 1px));
     width: 100%;
     height: 75px;
-} 
+}
 
 h1 {
     width: 650px;
     margin: 0px;
     font-family: 'BW-Gradual';
-    font-weight: 700;
+    font-weight: 700; /* TODO: what for? */
     font-size: 56px;
     line-height: 65px;
 }
@@ -90,7 +90,7 @@ h1 {
     padding: 18px 36px;
     background-color: black;
     font-family: 'BW-Gradual';
-    font-weight: 700; 
+    font-weight: 700;
     font-size: 16px;
     line-height: 20px;
     color: white;
@@ -114,14 +114,14 @@ h1 {
 
 .navbar a:hover {
     text-decoration: underline #FF8500;
-    text-underline-offset: 6px; 
+    text-underline-offset: 6px;
 }
 
 .navbar li {
     display: inline;
     margin-right: 60px;
     font-family: 'BW-Gradual';
-    font-weight: 400;
+    font-weight: 400; /* TODO: what for? */
 }
 
 .navbar li:last-child {
@@ -133,7 +133,7 @@ h1 {
     background-color: #EFF4FF;
     padding: 198px 0px 82px;
     text-align: center;
-    margin: auto;
+    margin: auto; /* TODO: what for? */
 }
 
 .welcome-message-text {
@@ -143,7 +143,7 @@ h1 {
     display: inline-block;
 }
 
-.welcome-message-text span { 
+.welcome-message-text span {
     font-size: 32px;
     font-family:'Cera';
     font-weight: 500;
@@ -156,16 +156,16 @@ h1 {
 
 h2 {
     font-family: 'BW-Gradual';
-    font-weight: 700;
+    font-weight: 700; /* TODO: what for? */
     font-size: 40px;
     line-height: 100%;
-    width: 305px;
-    margin: 0px;
+    width: 305px; /* TODO: what for? */
+    margin: 0px; /* TODO: simplify */
     margin-bottom: 35px;
 }
 
 .about-company p {
-    display: inline-block;
+    display: inline-block; /* TODO: what for? */
     width: 649px;
     margin: 0px 0px 30px;
 }
@@ -182,7 +182,7 @@ h2 {
     position: absolute;
 }
 
-.left-illustr-element-h2 {
+.left-illustr-element-h2 { /* TODO: redo */
     margin-top: 34px;
     margin-left: -27px;
 }
