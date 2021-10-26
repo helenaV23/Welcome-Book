@@ -66,7 +66,7 @@ h1 {
     width: 650px;
     margin: 0px;
     font-family: 'BW-Gradual';
-    font-weight: 700; /* TODO: what for? */
+     /* TODO: what for? */
     font-size: 56px;
     line-height: 65px;
 }
@@ -121,7 +121,7 @@ h1 {
     display: inline;
     margin-right: 60px;
     font-family: 'BW-Gradual';
-    font-weight: 400; /* TODO: what for? */
+     /* TODO: what for? */
 }
 
 .navbar li:last-child {
@@ -133,7 +133,7 @@ h1 {
     background-color: #EFF4FF;
     padding: 198px 0px 82px;
     text-align: center;
-    margin: auto; /* TODO: what for? */
+     /* TODO: what for? */
 }
 
 .welcome-message-text {
@@ -156,16 +156,31 @@ h1 {
 
 h2 {
     font-family: 'BW-Gradual';
-    font-weight: 700; /* TODO: what for? */
+     /* TODO: what for? */
     font-size: 40px;
     line-height: 100%;
-    width: 305px; /* TODO: what for? */
-    margin: 0px; /* TODO: simplify */
-    margin-bottom: 35px;
+    /* TODO: what for? */
+    margin: 0px 0px 35px; /* TODO: simplify */
+    position: relative;
+}
+
+.about-company h2::after {
+    content: url(images/left-quotation-mark.svg);
+    position: absolute;
+    left: -27px;
+    bottom: -36px;
+}
+
+.about-company h2::before {
+    content: url(images/left-quotation-mark.svg);
+    position: absolute;
+    transform: rotate(180deg);
+    left: 304px;
+    bottom: 25px;
 }
 
 .about-company p {
-    display: inline-block; /* TODO: what for? */
+     /* TODO: what for? */
     width: 649px;
     margin: 0px 0px 30px;
 }
@@ -182,39 +197,4 @@ h2 {
     position: absolute;
 }
 
-.left-illustr-element-h2 { /* TODO: redo */
-    margin-top: 34px;
-    margin-left: -27px;
-}
-
-.right-illustr-element-h2 {
-    margin-left: 304px;
-    margin-top: -21px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ /* TODO: redo */
