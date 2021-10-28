@@ -11,6 +11,12 @@
 }
 
 @font-face {
+    font-family: 'BW-Gradual';
+    src: url(fonts/BwGradual-Medium.woff);
+    font-weight: 500;
+}
+
+@font-face {
     font-family: 'Cera';
     src: url('fonts/Cera-Regular.ttf');
     font-weight: 400;
@@ -148,7 +154,7 @@ h1 {
 
 .about-company {
     padding: 140px 0px 148px;
-    position: relative; /* TODO: what for? */
+/* TODO: what for? */
 }
 
 h2 {
@@ -160,14 +166,14 @@ h2 {
 }
 
 .about-company h2::after {
-    content: url(images/left-quotation-mark.svg); /* TODO: use quotes */
+    content: url(images/quotation-mark.svg); /* TODO: use quotes */
     position: absolute;
     left: -27px;
     bottom: -36px;
 }
 
 .about-company h2::before {
-    content: url(images/left-quotation-mark.svg); /* TODO: use quotes */
+    content: url(images/quotation-mark.svg); /* TODO: use quotes */
     position: absolute;
     transform: rotate(180deg);
     left: 304px;
@@ -189,4 +195,75 @@ h2 {
 
 .about-company-content img {
     position: absolute;
+}
+
+ .people {
+     width: 100%;
+     background-color: #EFF4FF;
+     padding: 140px 0px 223px;
+     list-style-type: none;
+ }
+
+  .people li {
+      display: inline-block;
+      margin-top: 50px;
+  }
+
+  .people img {
+      display: block;
+  }
+
+ h3 {
+     font-family: 'BW-Gradual';
+     font-size: 32px;
+     font-weight: 500;
+     margin-top: 55px;
+ }
+
+ .text-center {
+     text-align: center;
+ }
+
+ h5 {
+    font-family: 'BW-Gradual';
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;
+    margin: 0px;
+ }
+
+ .person-info {
+     background-color: white;
+     padding: 20px;
+ }
+
+ .people p {
+     margin-top: 12px;
+     line-height: 25px;
+     margin: 12px 0px 0px;
+ }
+
+ .people h2::after {
+    content: url(images/quotation-mark.svg); /* TODO: use quotes */
+    position: absolute;
+    left: 440px;
+    bottom: -36px;
+}
+
+.people h2::before {
+    content: url(images/quotation-mark.svg); /* TODO: use quotes */
+    position: absolute;
+    transform: rotate(180deg);
+    right: 436px;
+    bottom: 25px;
+}
+
+.marg-100 {
+    margin-top: 150px;
+}
+
+.work-time {
+    width: 100%;
+    background-color: #001FA8;
+    color:white;
 }
