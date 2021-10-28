@@ -71,7 +71,7 @@ header {
 h1 {
     width: 650px;
     margin: 0px;
-    font-family: 'BW-Gradual';
+    font-family: 'BW-Gradual'; /* TODO: all titles use the same font. Why do you duplicate in every selector? */
     font-size: 56px;
     line-height: 65px;
 }
@@ -154,7 +154,6 @@ h1 {
 
 .about-company {
     padding: 140px 0px 148px;
-/* TODO: what for? */
 }
 
 h2 {
@@ -197,16 +196,20 @@ h2 {
     position: absolute;
 }
 
+/* TODO: align styles */
+
  .people {
-     width: 100%;
+     width: 100%; /* TODO: what for? */
      background-color: #EFF4FF;
      padding: 140px 0px 223px;
-     list-style-type: none;
+     list-style-type: none; /* TODO: why here? */
  }
 
+  /* TODO: ul has padding */
+
   .people li {
-      display: inline-block;
-      margin-top: 50px;
+      display: inline-block; /* TODO: what for?  */
+      margin-top: 50px; /* TODO: why here? */
   }
 
   .people img {
@@ -228,7 +231,7 @@ h2 {
     font-family: 'BW-Gradual';
     font-size: 20px;
     font-weight: 500;
-    line-height: 25px;
+    line-height: 25px; /* TODO: what for?  */
     margin: 0px;
  }
 
@@ -238,19 +241,19 @@ h2 {
  }
 
  .people p {
-     margin-top: 12px;
-     line-height: 25px;
+     margin-top: 12px; /* TODO: what for?  */
+     line-height: 25px; /* TODO: what for?  */
      margin: 12px 0px 0px;
  }
 
- .people h2::after {
+ .people h2::after { /* TODO: duplication. you have the same decoration in prev section */
     content: url(images/quotation-mark.svg); /* TODO: use quotes */
     position: absolute;
     left: 440px;
     bottom: -36px;
 }
 
-.people h2::before {
+.people h2::before { /* TODO: duplication. you have the same decoration in prev section */
     content: url(images/quotation-mark.svg); /* TODO: use quotes */
     position: absolute;
     transform: rotate(180deg);
@@ -258,7 +261,7 @@ h2 {
     bottom: 25px;
 }
 
-.marg-100 {
+.marg-100 {  /* TODO: bad class name */
     margin-top: 150px;
 }
 
