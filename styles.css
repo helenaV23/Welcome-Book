@@ -28,13 +28,16 @@
     font-weight: 500;
 }
 
-
 body {
     margin: 0px;
     font-family: 'Cera';
     font-weight: 400;
     font-size: 16px;
     line-height: 25px;
+}
+
+h1, h2, h3, h5 {
+    font-family: 'BW-Gradual';
 }
 
 header {
@@ -52,7 +55,6 @@ header {
 }
 
 .main-screen {
-    width: 100%;
     background-color: #001FA8;
     position: relative;
     padding: 112px 0px 38px;
@@ -71,7 +73,7 @@ header {
 h1 {
     width: 650px;
     margin: 0px;
-    font-family: 'BW-Gradual'; /* TODO: all titles use the same font. Why do you duplicate in every selector? */
+ /* TODO: all titles use the same font. Why do you duplicate in every selector? */
     font-size: 56px;
     line-height: 65px;
 }
@@ -133,7 +135,6 @@ h1 {
 }
 
 .welcome-message {
-    width: 100%;
     background-color: #EFF4FF;
     padding: 198px 0px 82px;
     text-align: center;
@@ -157,26 +158,25 @@ h1 {
 }
 
 h2 {
-    font-family: 'BW-Gradual';
     font-size: 40px;
     line-height: 100%;
     margin: 0px 0px 35px;
     position: relative;
+    display: inline-block;
 }
 
-.about-company h2::after {
+h2::before {
     content: url(images/quotation-mark.svg); /* TODO: use quotes */
     position: absolute;
+    top: 34px;
     left: -27px;
-    bottom: -36px;
 }
 
-.about-company h2::before {
+h2::after { 
     content: url(images/quotation-mark.svg); /* TODO: use quotes */
     position: absolute;
     transform: rotate(180deg);
-    left: 304px;
-    bottom: 25px;
+    bottom: 26px;
 }
 
 .about-company p {
@@ -198,75 +198,108 @@ h2 {
 
 /* TODO: align styles */
 
- .people {
-     width: 100%; /* TODO: what for? */
-     background-color: #EFF4FF;
-     padding: 140px 0px 223px;
-     list-style-type: none; /* TODO: why here? */
- }
+.people {
+    /* TODO: what for? */
+    background-color: #EFF4FF;
+    padding: 140px 0px 223px;
+     /* TODO: why here? */
+}
+
+.people ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
 
   /* TODO: ul has padding */
 
-  .people li {
-      display: inline-block; /* TODO: what for?  */
-      margin-top: 50px; /* TODO: why here? */
-  }
+.people li {
+    /* TODO: what for?  */
+   /* TODO: why here? */
+}
 
-  .people img {
-      display: block;
-  }
+.people img {
+    display: block;
+}
 
- h3 {
-     font-family: 'BW-Gradual';
-     font-size: 32px;
-     font-weight: 500;
-     margin-top: 55px;
- }
+h3 {
+    font-size: 32px;
+    font-weight: 500;
+    margin-top: 55px;
+}
 
- .text-center {
-     text-align: center;
- }
+.people h3 {
+    margin-bottom: 50px;
+}
 
- h5 {
-    font-family: 'BW-Gradual';
+h5 {
     font-size: 20px;
     font-weight: 500;
-    line-height: 25px; /* TODO: what for?  */
+    /* TODO: what for?  */
     margin: 0px;
- }
-
- .person-info {
-     background-color: white;
-     padding: 20px;
- }
-
- .people p {
-     margin-top: 12px; /* TODO: what for?  */
-     line-height: 25px; /* TODO: what for?  */
-     margin: 12px 0px 0px;
- }
-
- .people h2::after { /* TODO: duplication. you have the same decoration in prev section */
-    content: url(images/quotation-mark.svg); /* TODO: use quotes */
-    position: absolute;
-    left: 440px;
-    bottom: -36px;
 }
 
-.people h2::before { /* TODO: duplication. you have the same decoration in prev section */
-    content: url(images/quotation-mark.svg); /* TODO: use quotes */
-    position: absolute;
-    transform: rotate(180deg);
-    right: 436px;
-    bottom: 25px;
+.person-info {
+    background-color: white;
+    padding: 20px;
 }
 
-.marg-100 {  /* TODO: bad class name */
+.people p {
+     /* TODO: what for?  */
+     /* TODO: what for?  */
+    margin: 12px 0px 0px;
+}
+
+.block-spacing {  /* TODO: bad class name */
     margin-top: 150px;
 }
 
+.text-center {
+    text-align: center;
+}
+
 .work-time {
-    width: 100%;
     background-color: #001FA8;
     color:white;
+    padding: 80px 0px 140px;
+    position: relative;
+}
+
+.work-time::before {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    background: linear-gradient(to right top, #001FA8 50%, transparent calc(50% + 1px));
+    width: 100%;
+    height: 75px;
+}
+
+.work-time p {
+    margin: 14px 0px 0px;
+    width: 298px;
+}
+
+.work-time ul {
+    margin: 0px;
+}
+
+.columnar-text {
+    column-count: 2;
+    column-gap: 86px;
+}
+
+.heading-spacing {
+    margin-top: 0px;
+}
+
+.work-time h2 {
+    margin-bottom: 55px;
+}
+
+.work-time .push-apart img {
+    margin-top: 18px;
+}
+
+.work-time .columnar-text h3 {
+    margin-bottom: 0px;
 }
