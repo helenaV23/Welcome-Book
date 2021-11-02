@@ -12,7 +12,7 @@
 
 @font-face {
     font-family: 'BW-Gradual';
-    src: url(fonts/BwGradual-Medium.woff);
+    src: url(fonts/BwGradual-Medium.woff); /* TODO: use quotes */
     font-weight: 500;
 }
 
@@ -73,7 +73,6 @@ header {
 h1 {
     width: 650px;
     margin: 0px;
- /* TODO: all titles use the same font. Why do you duplicate in every selector? */
     font-size: 56px;
     line-height: 65px;
 }
@@ -172,11 +171,12 @@ h2::before {
     left: -27px;
 }
 
-h2::after { 
+h2::after {
     content: url(images/quotation-mark.svg); /* TODO: use quotes */
     position: absolute;
     transform: rotate(180deg);
     bottom: 26px;
+    /* TODO: where horizontal coordinate? */
 }
 
 .about-company p {
@@ -196,26 +196,18 @@ h2::after {
     position: absolute;
 }
 
-/* TODO: align styles */
-
 .people {
-    /* TODO: what for? */
     background-color: #EFF4FF;
     padding: 140px 0px 223px;
-     /* TODO: why here? */
 }
 
-.people ul {
+.people ul { /* TODO: why here? | for list style type in work section? */
     list-style-type: none;
     padding: 0px;
     margin: 0px;
 }
 
-  /* TODO: ul has padding */
-
-.people li {
-    /* TODO: what for?  */
-   /* TODO: why here? */
+.people li { /* TODO: what for?  */
 }
 
 .people img {
@@ -235,7 +227,6 @@ h3 {
 h5 {
     font-size: 20px;
     font-weight: 500;
-    /* TODO: what for?  */
     margin: 0px;
 }
 
@@ -245,8 +236,6 @@ h5 {
 }
 
 .people p {
-     /* TODO: what for?  */
-     /* TODO: what for?  */
     margin: 12px 0px 0px;
 }
 
@@ -283,12 +272,12 @@ h5 {
     margin: 0px;
 }
 
-.columnar-text {
+.columnar-text { /* TODO: use css grids */
     column-count: 2;
     column-gap: 86px;
 }
 
-.heading-spacing {
+.heading-spacing {  /* TODO: bad class name | pseudo class? */
     margin-top: 0px;
 }
 
