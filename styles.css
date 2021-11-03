@@ -232,7 +232,7 @@ h5 {
     margin: 12px 0px 0px;
 }
 
-.block-spacing {  /* TODO: bad class name */
+.people h3:nth-last-child(2) {  /* TODO: bad class name */
     margin-top: 150px;
 }
 
@@ -281,6 +281,10 @@ h5 {
 
 .work-time .columnar-text h3 {
     margin-bottom: 0px;
+}
+
+.work-time h3:last-child {
+    margin-top: 150px;
 }
 
 h6 {
