@@ -12,7 +12,7 @@
 
 @font-face {
     font-family: 'BW-Gradual';
-    src: url('fonts/BwGradual-Medium.woff'); /* TODO: use quotes */
+    src: url('fonts/BwGradual-Medium.woff');
     font-weight: 500;
 }
 
@@ -36,7 +36,7 @@ body {
     line-height: 25px;
 }
 
-body ul {
+body ul { /* TODO: why body? */
     list-style-type: none;
     padding: 0px;
     margin: 0px;
@@ -95,7 +95,7 @@ h1 {
     padding: 42px 0px 40px;
 }
 
-.btn {
+.btn { /* TODO: because I can't see any other button in mock up - clean up this styles from specific for button tag */
     margin: 0px;
     border: 0px;
     border-radius: 0px;
@@ -166,19 +166,18 @@ h2 {
 }
 
 h2::before {
-    content: url('images/quotation-mark.svg'); /* TODO: use quotes */
+    content: url('images/quotation-mark.svg');
     position: absolute;
     top: 34px;
     left: -27px;
 }
 
 h2::after {
-    content: url('images/quotation-mark.svg'); /* TODO: use quotes */
+    content: url('images/quotation-mark.svg');
     position: absolute;
     transform: rotate(180deg);
     bottom: 26px;
     right: -30px;
-    /* TODO: where horizontal coordinate? */
 }
 
 .about-company p {
@@ -232,7 +231,7 @@ h5 {
     margin: 12px 0px 0px;
 }
 
-.people h3:nth-last-child(2) {  /* TODO: bad class name */
+.people h3:nth-last-child(2) {
     margin-top: 150px;
 }
 
@@ -265,7 +264,7 @@ h5 {
     padding-left: 16px;
 }
 
-.columnar-text { /* TODO: use css grids */
+.columnar-text {
     display: grid;
     grid-template-columns: 298px 298px;
     grid-gap: 70px;
