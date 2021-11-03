@@ -12,7 +12,7 @@
 
 @font-face {
     font-family: 'BW-Gradual';
-    src: url(fonts/BwGradual-Medium.woff); /* TODO: use quotes */
+    src: url('fonts/BwGradual-Medium.woff'); /* TODO: use quotes */
     font-weight: 500;
 }
 
@@ -34,6 +34,12 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 25px;
+}
+
+body ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
 }
 
 h1, h2, h3, h5 {
@@ -99,8 +105,8 @@ h1 {
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
-    color: white;
-    cursor: pointer;
+    text-decoration: none;
+    color: white;;
 }
 
 .main-screen-img {
@@ -108,28 +114,23 @@ h1 {
     width: 538px;
 }
 
-.navbar {
-    margin: 0px;
-    padding: 0px;
-}
-
-.navbar a {
+nav a {
     text-decoration: none;
     color: black;
 }
 
-.navbar a:hover {
+nav a:hover {
     text-decoration: underline #FF8500;
     text-underline-offset: 6px;
 }
 
-.navbar li {
+nav li {
     display: inline;
     margin-right: 60px;
     font-family: 'BW-Gradual';
 }
 
-.navbar li:last-child {
+nav li:last-child {
     margin-right: 0px;
 }
 
@@ -165,17 +166,18 @@ h2 {
 }
 
 h2::before {
-    content: url(images/quotation-mark.svg); /* TODO: use quotes */
+    content: url('images/quotation-mark.svg'); /* TODO: use quotes */
     position: absolute;
     top: 34px;
     left: -27px;
 }
 
 h2::after {
-    content: url(images/quotation-mark.svg); /* TODO: use quotes */
+    content: url('images/quotation-mark.svg'); /* TODO: use quotes */
     position: absolute;
     transform: rotate(180deg);
     bottom: 26px;
+    right: -30px;
     /* TODO: where horizontal coordinate? */
 }
 
@@ -199,15 +201,6 @@ h2::after {
 .people {
     background-color: #EFF4FF;
     padding: 140px 0px 223px;
-}
-
-.people ul { /* TODO: why here? | for list style type in work section? */
-    list-style-type: none;
-    padding: 0px;
-    margin: 0px;
-}
-
-.people li { /* TODO: what for?  */
 }
 
 .people img {
@@ -265,24 +258,21 @@ h5 {
 
 .work-time p {
     margin: 14px 0px 0px;
-    width: 298px;
 }
 
 .work-time ul {
-    margin: 0px;
+    list-style-type: disc;
+    padding-left: 16px;
 }
 
 .columnar-text { /* TODO: use css grids */
-    column-count: 2;
-    column-gap: 86px;
-}
-
-.heading-spacing {  /* TODO: bad class name | pseudo class? */
-    margin-top: 0px;
+    display: grid;
+    grid-template-columns: 298px 298px;
+    grid-gap: 70px;
 }
 
 .work-time h2 {
-    margin-bottom: 55px;
+    margin-bottom: 0px;
 }
 
 .work-time .push-apart img {
@@ -290,5 +280,21 @@ h5 {
 }
 
 .work-time .columnar-text h3 {
+    margin-bottom: 0px;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+.leave h6 {
+    margin: 14px 0px 0px;
+}
+
+.leave p {
+    margin: 0px 0px 32px;
+}
+
+.leave p:last-child {
     margin-bottom: 0px;
 }
