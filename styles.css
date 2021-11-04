@@ -95,7 +95,7 @@ h1 {
     padding: 42px 0px 40px;
 }
 
-.btn { /* TODO: because I can't see any other button in mock up - clean up this styles from specific for button tag */
+.content a { /* TODO: because I can't see any other button in mock up - clean up this styles from specific for button tag */
     margin: 0px;
     border: 0px;
     border-radius: 0px;
@@ -160,9 +160,13 @@ nav li:last-child {
 h2 {
     font-size: 40px;
     line-height: 100%;
-    margin: 0px 0px 35px;
+    margin: 0px 0px 55px;
     position: relative;
     display: inline-block;
+}
+
+.about-company h2 {
+    margin-bottom: 35px;
 }
 
 h2::before {
@@ -209,7 +213,7 @@ h2::after {
 h3 {
     font-size: 32px;
     font-weight: 500;
-    margin-top: 55px;
+    margin-top: 0px;
 }
 
 .people h3 {
@@ -231,7 +235,7 @@ h5 {
     margin: 12px 0px 0px;
 }
 
-.people h3:nth-last-child(2) {
+.people-kyiv-office {
     margin-top: 150px;
 }
 
@@ -274,6 +278,10 @@ h5 {
     margin-bottom: 0px;
 }
 
+.columnar-text h3 {
+    margin-top: 55px;
+}
+
 .work-time .push-apart img {
     margin-top: 18px;
 }
@@ -282,7 +290,7 @@ h5 {
     margin-bottom: 0px;
 }
 
-.work-time h3:last-child {
+.work-time-faq {
     margin-top: 150px;
 }
 
@@ -290,14 +298,14 @@ h6 {
     font-size: 16px;
 }
 
-.leave h6 {
+.work-time-leave h6 {
     margin: 14px 0px 0px;
 }
 
-.leave p {
+.work-time-leave p {
     margin: 0px 0px 32px;
 }
 
-.leave p:last-child {
+.work-time-leave p:last-child {
     margin-bottom: 0px;
 }
