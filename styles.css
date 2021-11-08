@@ -96,7 +96,7 @@ h1 {
 }
 
 .btn {
-    position: absolute; /* TODO: why absolute? */
+    display: inline-block; /* TODO: why absolute? */
     padding: 18px 36px;
     background-color: black;
     font-family: 'BW-Gradual';
